@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(53.64deg, #0B1038 40.38%, #090C27 59.1%, #2B3166 59.15%, #434C9B 80.42%);
+  color: #fff;
+  align-items: start;
+  row-gap: 2rem;
+  grid-template-rows: min-content;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  padding: 20px;
+}
+header nav {
+  justify-content: space-around;
+}
+header nav .options {
+  display: flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+header nav .options a {
+  color: #fff;
+  text-decoration: none;
+}
+header nav .options .active {
+  border-bottom: 2px solid #fff;
+}
+
+.artigo {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.artigo article {
+  display: grid;
+  row-gap: 1rem;
+  width: 100%;
+}
+.artigo article .title {
+  display: grid;
+  font-size: calc(100% + 2rem);
+  letter-spacing: 0.5em;
+  animation: 2s anim-lineUp ease-out infinite;
+}
+.artigo article button {
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.artigo article button:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1882352941);
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translatex(-80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}/*# sourceMappingURL=style.css.map */
